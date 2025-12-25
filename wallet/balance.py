@@ -29,22 +29,13 @@ def get_balance(address: str) -> float:
     """Возвращает баланс адреса (0.0 если нет)"""
     return load_balances().get(address, 0.0)
 
-def add_funds(address: str, amount: float):
-    """Добавляет средства на адрес (используется при майнинге и первом запуске)"""
-    balances = load_balances()
-    balances[address] = balances.get(address, 0.0) + float(amount)
-    save_balances(balances)
-
-# === Автоматическое начисление стартовых 1000 монет при первом запуске ===
-# (это выполнится один раз при импорте модуля)
 if BALANCE_FILE.exists():
     temp_balances = load_balances()
     if not temp_balances:  # если файл пустой
-        from wallet.keys import generate_wallet
-        wallet = generate_wallet()
-        add_funds(wallet["address"], 1000.0)
+        # from wallet.keys import generate_wallet
+        # wallet = generate_wallet()
+        pass
 else:
-    # Файла нет вообще — создаём и начисляем
-    from wallet.keys import generate_wallet
-    wallet = generate_wallet()
-    add_funds(wallet["address"], 1000.0)
+    # from wallet.keys import generate_wallet
+    # wallet = generate_wallet()
+    pass

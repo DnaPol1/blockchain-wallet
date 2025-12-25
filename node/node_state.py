@@ -1,0 +1,2 @@
+mempool: list = []
+blockchain: list = []

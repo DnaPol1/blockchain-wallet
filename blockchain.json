@@ -1,12 +1,10 @@
 [
   {
-    "index": 2,
-    "timestamp": 1765444836.8340604,
-    "transactions": [],
-    "previous_hash": "0000fa6b02fb5ddfb1dd5c4f5a4bfedbc3d0398289ab3c5e7cecd7e81a9ef4ef",
-    "merkle_root": "0000000000000000000000000000000000000000000000000000000000000000",
-    "nonce": 31761,
-    "difficulty": 4,
-    "hash": "00007471be74b4456a19eadecc8c4879e9c700fb87ae9f3504e0f185a767c1bb"
+    "index": 1,
+    "hash": "0000699de3512d827cdebbeadc63edee94e5984595a7bf062684de6ec9e65209",
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "timestamp": 1766473298.1123583,
+    "nonce": 32492,
+    "transactions": []
   }
 ]
